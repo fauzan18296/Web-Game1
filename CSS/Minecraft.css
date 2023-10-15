@@ -1,0 +1,343 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,700;1,300;1,400&family=Rubik+Pixels&display=swap");
+
+/* Clearing CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--bg-color-nav);
+  font-family: "Noto Sans", sans-serif, Helvetica;
+}
+
+:root {
+  --bg-color-nav: #222;
+  --text-href-color: rgba(253, 252, 252, 0.938);
+  --text-color-brand: rgb(208, 197, 192);
+  --color-bg: rgba(6, 187, 6, 0.938);
+  --color-hover-menu: rgb(138, 231, 115);
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-nav);
+  position: fixed;
+  padding: 1.2rem 3%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .brand {
+  justify-content: start;
+  align-items: center;
+  font-family: "Rubik Pixels";
+  font-weight: 400;
+  font-size: 3.9em;
+}
+
+.navbar .brand a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color-brand);
+  margin: 0 10px;
+}
+
+.navbar .nav-list {
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin: 0 10%;
+}
+
+.navbar .nav-list a {
+  font-size: 1.6rem;
+  color: var(--text-href-color);
+  padding: 0 1.4rem;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.navbar .nav-list a:hover {
+  color: var(--color-hover-menu);
+}
+
+.navbar .nav-list .bg-active {
+  color: var(--color-hover-menu) !important;
+}
+
+.navbar .nav-list .dropdown {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-list .dropdown button {
+  margin: 0 10px;
+  background-color: var(--bg-color-nav);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+}
+
+.navbar .nav-list .dropdown button:hover {
+  color: var(--color-hover-menu);
+}
+
+.navbar .nav-list .dropdown a {
+  background-color: var(--bg-color-nav);
+  color: var(--text-href-color);
+}
+
+.navbar .sideBar {
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1rem;
+  padding: 0 15px;
+}
+
+.navbar .sideBar a {
+  margin: 0 2.2rem;
+  color: var(--text-href-color);
+  transition: all 1.1s;
+}
+
+.navbar .sideBar a:hover {
+  color: var(--color-hover-menu);
+}
+
+#asideBar {
+  display: none;
+}
+
+/* Media Query */
+
+/* Media Laptop */
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* Media Tablet */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  #asideBar {
+    display: inline-block;
+  }
+
+  .navbar .nav-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg-color-nav);
+    width: 30rem;
+    height: 100vh;
+    transition: all 1.1s;
+  }
+
+  .navbar .nav-list.active {
+    right: 0;
+    margin: 0 0;
+  }
+
+  .navbar .nav-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5.4rem 20px;
+    padding: 1.2rem 20px;
+  }
+}
+
+/* Media Mobile Phone */
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+/* Akhir baris Navbar */
+
+/* Bagian isi halaman logo */
+.first-page {
+  background-image: url("../IMG/Background-page\ logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.first-page .Caption {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+}
+
+.first-page .Caption h1 {
+  font-size: 3rem;
+  padding: 0 1.5rem;
+  font-weight: 700;
+}
+
+.first-page .contains {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+}
+
+.first-page .contains p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.first-page .contains button {
+  width: 12rem;
+  background-color: var(--color-bg);
+  padding: 1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  color: var(--text-href-color);
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.34);
+  transition: all 1.1s;
+}
+
+.first-page .contains button:hover {
+  background-color: var(--bg-color-nav);
+}
+
+/* Mobile screen */
+@media screen and (max-width: 576px) {
+  .first-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    filter: blur(2px);
+  }
+
+  .first-page .Caption {
+    padding: 14rem 1.4rem;
+    flex-wrap: wrap;
+  }
+
+  .first-page .Caption h1 {
+    font-size: 250%;
+    padding: 0 2.2rem;
+    align-items: center;
+  }
+
+  .first-page .contains p {
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .dual-page h2 {
+    font-size: 2rem;
+  }
+
+  .dual-page .card-group .card {
+    margin: 0 2.2rem;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+}
+
+/* Membuat beberapa game explore minecraft */
+
+.dual-page {
+  display: block;
+  background-color: var(--text-href-color);
+  margin: 12.12rem 6.6rem;
+  position: relative;
+}
+
+.dual-page h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 0 0.2rem;
+}
+
+.dual-page .card-group {
+  margin: 1.8rem 2rem;
+}
+
+.dual-page .card-group .card {
+  margin: 0 1.2rem;
+  border: none;
+}
+
+.dual-page .card-group .card img:hover {
+  transform: scale(1.1);
+  transition: all ease 1.1s;
+}
+
+.dual-page .card-group .card .card-body {
+  margin: 1.2rem;
+}
+
+.dual-page .card-group .card .card-body p {
+  font-size: 1.4em;
+}
+
+.dual-page .card-group .card .card-body h5 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 1.4px;
+}
+
+/* section layout-page-slide */
+.layout-page-slide {
+  display: block;
+  padding: 1.2rem 12rem;
+}
+
+.layout-page-slide h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.layout-page-slide .card-component {
+  display: flex;
+}
+
+.layout-page-slide .card-component .card-title {
+  color: #fff;
+  margin: 1.2rem;
+}
+
+.layout-page-slide .card-component .card-paragraf {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.layout-page-slide .card-img img {
+  height: 30%;
+  width: 30%;
+}
+
+/* Akhir baris isi halaman logo */
