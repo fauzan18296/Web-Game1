@@ -235,11 +235,11 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    filter: blur(2px);
   }
 
   .first-page .Caption {
     padding: 14rem 1.4rem;
+    backdrop-filter: blur(9.9px);
     flex-wrap: wrap;
   }
 
@@ -252,6 +252,9 @@ body {
   .first-page .contains p {
     font-weight: 500;
     line-height: 28px;
+  }
+  .dual-page {
+    width: 70%;
   }
 
   .dual-page h2 {
@@ -270,7 +273,7 @@ body {
 .dual-page {
   display: block;
   background-color: var(--text-href-color);
-  margin: 12.12rem 6.6rem;
+  margin: 12.12em 6.6em;
   position: relative;
 }
 
