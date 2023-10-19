@@ -15,6 +15,11 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Fitur untuk kembali ke bagian awal/intro
+let introduction = document.addEventListener("click", () => {
+  location.href = "#intro";
+});
+
 // akhir baris fungsi dari Toggle asidebar
 
 // Fungsi untuk button dari section Click Me!

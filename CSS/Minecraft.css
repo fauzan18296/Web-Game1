@@ -266,7 +266,15 @@ body {
     padding: 0;
     flex-wrap: wrap;
   }
+  .arrowtop {
+    margin: 2em 2em;
+  }
+  #Top {
+    padding: 20px 2px;
+  }
 }
+
+/* Akhir Media Mobile */
 
 /* Membuat beberapa game explore minecraft */
 
@@ -341,6 +349,30 @@ body {
 .layout-page-slide .card-img img {
   height: 30%;
   width: 30%;
+}
+
+/* Section fitur untuk kembali kebagian awal */
+
+.arrowtop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#Top {
+  background-color: var(--text-href-color);
+  border: solid 1px var(--bg-color-nav);
+  border-radius: 10%;
+  color: var(--bg-color-nav);
+  margin: 5% 6%;
+  padding: 10px;
+  font-size: 5em;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+#Top:hover {
+  background-color: var(--color-hover-menu);
+  color: var(--text-href-color);
 }
 
 /* Akhir baris isi halaman logo */
