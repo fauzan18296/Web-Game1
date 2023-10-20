@@ -269,9 +269,6 @@ body {
   .arrowtop {
     margin: 2em 2em;
   }
-  #Top {
-    padding: 20px 2px;
-  }
 }
 
 /* Akhir Media Mobile */
@@ -319,36 +316,40 @@ body {
   margin: 1.4px;
 }
 
-/* section layout-page-slide */
-.layout-page-slide {
+/* Section Info */
+.info {
   display: block;
-  padding: 1.2rem 12rem;
+  background-color: var(--text-href-color);
+  color: var(--bg-color-nav);
 }
-
-.layout-page-slide h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.layout-page-slide .card-component {
+.info .contain1 {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto 30em;
 }
 
-.layout-page-slide .card-component .card-title {
-  color: #fff;
-  margin: 1.2rem;
+.info #img1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20em;
+  flex-direction: row;
 }
 
-.layout-page-slide .card-component .card-paragraf {
-  color: #fff;
-  font-size: 1.8rem;
+.info #img2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto 4em;
+  flex-direction: row;
 }
 
-.layout-page-slide .card-img img {
-  height: 30%;
-  width: 30%;
+.info img {
+  width: 40%;
 }
 
 /* Section fitur untuk kembali kebagian awal */
@@ -364,7 +365,7 @@ body {
   border-radius: 10%;
   color: var(--bg-color-nav);
   margin: 5% 6%;
-  padding: 10px;
+  padding: 6px 6px;
   font-size: 5em;
   cursor: pointer;
   transition: all ease 0.4s;
