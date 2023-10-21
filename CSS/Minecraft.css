@@ -17,7 +17,7 @@ body {
 
 :root {
   --bg-color-nav: #222;
-  --text-href-color: rgba(253, 252, 252, 0.938);
+  --text-href-color: #fdfcfcef;
   --text-color-brand: rgb(208, 197, 192);
   --color-bg: rgba(6, 187, 6, 0.938);
   --color-hover-menu: rgb(138, 231, 115);
@@ -54,17 +54,19 @@ body {
 }
 
 .navbar .nav-list {
+  display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  margin: 0 10%;
+  margin: 0 10rem;
 }
 
 .navbar .nav-list a {
+  display: inline-block;
   font-size: 1.6rem;
   color: var(--text-href-color);
   padding: 0 1.4rem;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
   text-decoration: none;
 }
 
@@ -75,28 +77,22 @@ body {
 .navbar .nav-list .bg-active {
   color: var(--color-hover-menu) !important;
 }
-
-.navbar .nav-list .dropdown {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+.navbar #input-api {
+  display: inline-block;
+  margin: 2rem 0.12rem;
+  padding: 0.4rem 0.4rem;
+  border-radius: 10px;
 }
 
-.navbar .nav-list .dropdown button {
-  margin: 0 10px;
+.navbar .button-search {
+  display: inline-block;
+  margin: 2rem 0.12rem;
+  padding: 0.4rem 0.4rem;
+  border-radius: 20%;
+  font-weight: 500;
   background-color: var(--bg-color-nav);
-  font-size: 1.6rem;
-  font-weight: 700;
-  border: none;
-}
-
-.navbar .nav-list .dropdown button:hover {
   color: var(--color-hover-menu);
-}
-
-.navbar .nav-list .dropdown a {
-  background-color: var(--bg-color-nav);
-  color: var(--text-href-color);
+  border: var(--color-hover-menu) 2px solid;
 }
 
 .navbar .sideBar {
