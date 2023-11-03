@@ -75,7 +75,7 @@ body {
   color: var(--color-hover-menu) !important;
 }
 
-.nav-list .search-input {
+.form-control {
   justify-content: flex-end;
   align-items: center;
 }
