@@ -103,14 +103,14 @@ body {
 /* Media Query */
 
 /* Media Laptop */
-@media only screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
   html {
     font-size: 70%;
   }
 }
 
 /* Media Tablet */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 60%;
   }
@@ -145,13 +145,74 @@ body {
 }
 
 /* Media Mobile Phone */
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   html {
     font-size: 54%;
   }
+
+  .first-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .first-page .Caption {
+    padding: 14rem 1.4rem;
+    backdrop-filter: blur(9.9px);
+    flex-wrap: wrap;
+  }
+
+  .first-page .Caption h1 {
+    font-size: 250%;
+    padding: 0 2.2rem;
+    align-items: center;
+  }
+
+  .first-page .contains p {
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .dual-page {
+    width: 70%;
+  }
+
+  .dual-page h2 {
+    font-size: 2rem;
+  }
+
+  .dual-page .card-group .card {
+    margin: 0 2.2rem;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .contain1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em 2em;
+  }
+
+  .contain1 p {
+    font-size: 15%;
+    margin: 0.1em 0.2em;
+  }
+
+  .contain1 h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0.2em 0.2em;
+    text-align: justify;
+  }
+
+  .arrowtop {
+    margin: 2em 2em;
+  }
 }
 
-/* Akhir baris Navbar */
+/* Akhir baris Navbar dan Media query*/
 
 /* Bagian isi halaman logo */
 .first-page {
@@ -209,51 +270,6 @@ body {
   background-color: var(--bg-color-nav);
 }
 
-/* Mobile screen */
-@media screen and (max-width: 576px) {
-  .first-page {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-
-  .first-page .Caption {
-    padding: 14rem 1.4rem;
-    backdrop-filter: blur(9.9px);
-    flex-wrap: wrap;
-  }
-
-  .first-page .Caption h1 {
-    font-size: 250%;
-    padding: 0 2.2rem;
-    align-items: center;
-  }
-
-  .first-page .contains p {
-    font-weight: 500;
-    line-height: 28px;
-  }
-  .dual-page {
-    width: 70%;
-  }
-
-  .dual-page h2 {
-    font-size: 2rem;
-  }
-
-  .dual-page .card-group .card {
-    margin: 0 2.2rem;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  .arrowtop {
-    margin: 2em 2em;
-  }
-}
-
-/* Akhir Media Mobile */
-
 /* Membuat beberapa game explore minecraft */
 
 .dual-page {
@@ -305,11 +321,15 @@ body {
 }
 .info .contain1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: auto 30em;
+  margin: 0 2em;
+  font-size: 20px;
+}
+
+.info p {
+  font-size: 1.3rem;
 }
 
 .info #img1 {
@@ -317,7 +337,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  margin-left: 20em;
+  margin: 0 2em;
   flex-direction: row;
 }
 
@@ -330,7 +350,7 @@ body {
 }
 
 .info img {
-  width: 40%;
+  width: 50%;
 }
 
 /* Section fitur untuk kembali kebagian awal */
