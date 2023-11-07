@@ -37,7 +37,7 @@ function clickMe() {
 // Write Jquery JS
 
 // Membuat event
-$(".scroll").on("click", function () {
+$(".scroll").on("click", function (e) {
   let href = $(this).attr("href");
 
   // Membuat scrolll yang bersangkutan
@@ -51,6 +51,7 @@ $(".scroll").on("click", function () {
     1000,
     "swing"
   );
+  e.preventDefault();
 });
 
 // Akhir baris Code Jquery JS
