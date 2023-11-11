@@ -15,6 +15,10 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Mengfungsikan input supaya bisa di isi
+let getInput = document.querySelector(".form-control");
+getInput.values();
+
 // Fitur untuk kembali ke bagian awal/intro
 let introduction = document.addEventListener("click", () => {
   location.href = "#intro";
