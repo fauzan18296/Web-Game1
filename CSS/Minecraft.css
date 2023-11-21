@@ -182,7 +182,7 @@ body {
   }
 
   .dual-page .card-group .card {
-    margin: 0 2.2rem;
+    margin: 0 2.2em;
     padding: 0;
     flex-wrap: wrap;
   }
@@ -192,12 +192,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 2px crimson;
   }
 
   .info .contain1 {
-    border: solid 2px var(--bg-color-nav);
-    margin: 2em 2em;
+    margin: 0 2em;
   }
 
   .contain1 p {
@@ -205,10 +203,10 @@ body {
     margin: 0.1em 0.2em;
   }
 
-  .contain1 h4 {
-    font-size: 15px;
+  .title1 {
+    font-size: 9px;
     font-weight: 700;
-    margin: 0.2em 0.2em;
+    margin: 0 0.2em;
     text-align: center;
   }
 
@@ -217,12 +215,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 2px tomato;
+    margin: 0.2em;
   }
 
   .info img {
-    border: solid 2px brown;
-    align-items: normal;
+    width: 20%;
   }
 
   .arrowtop {
@@ -332,22 +329,47 @@ body {
 }
 
 /* Section Info */
-.info {
-  display: block;
-  background-color: var(--text-href-color);
-  color: var(--bg-color-nav);
-}
-.info .contain1 {
+.main-title-infoSection {
+  color: var(--text-href-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 0 2em;
+  margin: 3em auto;
+}
+
+.main-title-infoSection h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.info {
+  background-color: var(--text-href-color);
+  color: var(--bg-color-nav);
+}
+
+.info .title1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.4em 20px;
+}
+
+.info h4 {
+  font-size: 2.2em;
+}
+
+.info .contain1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
   font-size: 20px;
 }
 
 .info p {
-  font-size: 1.3rem;
+  font-size: 0.8em;
 }
 
 .info #img1 {
@@ -356,7 +378,6 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0 2em;
-  flex-direction: row;
 }
 
 .info #img2 {
@@ -368,7 +389,6 @@ body {
 }
 
 .info img {
-  margin-top: 1.1em;
   width: 42%;
 }
 
